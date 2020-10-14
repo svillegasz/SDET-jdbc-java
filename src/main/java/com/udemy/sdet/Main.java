@@ -15,9 +15,9 @@ public class Main {
         while (resultSet.next()) {
             CustomerInfo customerInfo = new CustomerInfo();
             customerInfo.setAmount(resultSet.getInt("amount"));
-            customerInfo.setCourserName(resultSet.getString("courseName"));
+            customerInfo.setCourseName(resultSet.getString("courseName"));
             customerInfo.setLocation(resultSet.getString("location"));
-            customerInfo.setPurchaseDate(resultSet.getDate("purchasedDate"));
+            customerInfo.setPurchasedDate(resultSet.getDate("purchasedDate"));
         }
 
         conn.close();
